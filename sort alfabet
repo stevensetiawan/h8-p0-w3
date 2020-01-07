@@ -1,0 +1,14 @@
+var x=['hu','hu','ha','d','k','z','y','c','x']
+
+for(j=0; j<x.length; j++){
+    for(i=0; i<x.length-1; i++){
+    if(x[i]>x[i+1]){
+    var temp = x[i]
+    x[i] = x[i+1]
+    x[i+1]=temp}}
+    if(x[i]===x[i+1]){
+        x[i+1]=x[i]
+    }
+}
+console.log(x);
+
