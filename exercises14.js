@@ -1,9 +1,10 @@
 function mengelompokkanAngka(arr) {
   // you can only write your code here!
   var hasil=[[],[],[]]
+  var count=0
   for(i=0; i<arr.length; i++){
     if(arr[i]%3===0){
-        hasil[2].push(arr[i])
+        hasil[[2].push(arr[i])
       } 
     else if(arr[i]%2===0){
         hasil[0].push(arr[i])
