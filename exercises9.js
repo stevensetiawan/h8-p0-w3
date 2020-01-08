@@ -5,8 +5,7 @@ function cariMean(arr) {
       tampung += arr[i]
       console.log(tampung)
   }
-  return Math.ceil(tampung/arr.length)
-  
+  return Math.round(tampung/=arr.length)
 }
 
 // TEST CASES
