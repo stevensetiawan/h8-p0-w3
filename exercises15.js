@@ -1,7 +1,7 @@
 function groupAnimals(animals){
 for(j=0; j<animals.length; j++){
    for(i=0; i<animals.length-1; i++){
-       if(animals[i]>animals[i+1]){
+       if(animals[i][0]>animals[i+1][0]){
            temp=animals[i+1]
            animals[i+1]=animals[i]
            animals[i]=temp
@@ -21,7 +21,7 @@ for(k=1; k<animals.length; k++){
     }
 return hasil
 }
-console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil','zebra','dorayaki','abang','cupu']));
+console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
 // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
-console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa','angsa', 'kancil', 'unta', 'cicak','uganda' ]));
+console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
 // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]
